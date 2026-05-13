@@ -60,3 +60,13 @@ borrowBook
 Тест случаи според критериумот Every branch. Мора да имаме барем 4 тест примери за да ги покриеме сите branches.
 
 <img width="815" height="330" alt="image" src="https://github.com/user-attachments/assets/8ed9a810-9e87-45df-934c-70dadc28a135" />
+
+Тест случаи според критериумот Multiple condition
+
+if (title.isEmpty() || author.isEmpty()) во borrowBook. Потребни се минимум 4 тест случаи.
+
+<img width="443" height="137" alt="image" src="https://github.com/user-attachments/assets/fb1ee038-4b1c-4266-bf77-f7f70074e4e9" />
+
+if (book.getTitle().equalsIgnoreCase(title) && !book.isBorrowed()) во searchBookByTitle. Потребни се минимум 3 тест случаи.
+
+<img width="407" height="98" alt="image" src="https://github.com/user-attachments/assets/a4804acf-c4ba-4116-9899-a448d5bce4d2" />
