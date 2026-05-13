@@ -34,16 +34,29 @@ borrowBook
   }
 9 return results;
 
-Тест случаи според критериумот Every statement
+Тест случаи според критериумот Every statement. Мора да имаме барем 3 тест примери за да ги покриеме сите statements.
 
-	""	бараме книга што не постои	бараме книга што постои
-1	TRUE	TRUE	TRUE
-2	TRUE		
-3		TRUE	TRUE
-4		TRUE	TRUE
-5		TRUE	TRUE
-6			TRUE
-7		TRUE	TRUE
-8		TRUE	
-9			TRUE
-<img width="590" height="241" alt="image" src="https://github.com/user-attachments/assets/6376e786-8247-40df-81b2-4c736d5eed05" />
+<img width="677" height="286" alt="image" src="https://github.com/user-attachments/assets/65383802-2317-4db9-ab69-0deaebfee5c7" />
+
+
+Го земаме методот borrowBook по линии
+1  if (title.isEmpty() || author.isEmpty()){
+2      throw new IllegalArgumentException("Invalid search query");
+   }
+3  for (Book book : books) {
+4      if (book.getTitle().equalsIgnoreCase(title) && book.getAuthor().equalsIgnoreCase(author)) {
+5          if (!book.isBorrowed()) {
+6              book.setBorrowed(true);
+7              System.out.println("Borrowed successfully");
+8          } else {
+9              throw new RuntimeException("Book is already borrowed.");
+           }
+10         return;
+       }
+   }
+11 throw new RuntimeException("Book not found");
+}
+
+Тест случаи според критериумот Every branch. Мора да имаме барем 4 тест примери за да ги покриеме сите branches.
+
+<img width="815" height="330" alt="image" src="https://github.com/user-attachments/assets/8ed9a810-9e87-45df-934c-70dadc28a135" />
