@@ -19,7 +19,6 @@ borrowBook
 
 
 Го земаме методот searchBookByTitle по линии
-<p>
 1  if (title.isEmpty()){                                     
 2      throw new IllegalArgumentException("Invalid title"); 
    }
@@ -34,7 +33,7 @@ borrowBook
 8     return null;                                          
   }
 9 return results;
-</p>
+
 Тест случаи според критериумот Every statement. Мора да имаме барем 3 тест примери за да ги покриеме сите statements.
 
 <img width="677" height="286" alt="image" src="https://github.com/user-attachments/assets/65383802-2317-4db9-ab69-0deaebfee5c7" />
