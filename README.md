@@ -13,6 +13,8 @@ borrowBook
 
 Цикломатска комплексност
 
+Условните јазли каде имаме uslov1 &&/|| uslov2 се пресметани како еден предикатен јазол. Доколку е специфицирано да се користи пристапот секој услов да е посебен предикат, ќе имавме 2 предикатни јазли во тој еден јазол.
+
 Цикломатска комплексност кај searchBookByTitle е 5. Ја добив со формулата CC = P + 1 каде P = број на предикатни јазли. 1. if title is empty, 2.for book in books, has more?, 3. if title checks && not borrowed, 4. if results is empty, P=4 CC=4+1=5
 
 Цикломатска комплексност кај borrowBook е исто така 5. Ја добив со формулата CC = P + 1 каде P = број на предикатни јазли. 1. if title || author isEmpty, 2.for book in books, has more?, 3. if title and author checks, 4. if book is not borrowed, P=4 CC=4+1=5
